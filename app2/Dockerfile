@@ -1,7 +1,7 @@
-# Dockerfile for App 1
+# Dockerfile for App 2
 FROM node:latest
 WORKDIR /home/node/app
-COPY app/* .  # Copy all files from the 'app' folder to /home/node/app
+COPY . .
 RUN npm install
-CMD node app1.js
+CMD node app2.js
 EXPOSE 8081
